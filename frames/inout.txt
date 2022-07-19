@@ -1,0 +1,20 @@
+text
+number
+email
+password
+color
+date
+time
+week
+month
+radio
+url
+checkbox
+submit
+reset
+button
+
+<select>
+	<option></option>
+</select>
+<textarea></textarea>

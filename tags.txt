@@ -1,0 +1,30 @@
+<html> 
+<head>
+<title>
+<body>
+<h1>
+<h2>
+<h3>
+<h4>
+<h5>
+<h6>
+<div>
+<span>
+<p>
+<a href="" target="_BLANK">
+<img src="" height="" width="" alt="">
+<br> : break line
+<hr> : horizontal line
+<b> : bold
+<i> :italic
+<u> : underline
+<sup> : superscript
+<sub> : subscript
+<ul type="square/circle">
+	<li>text</li>
+	<li>text</li>
+<ul>
+<ol type="1/a/A/i/I" start=10>
+	<li>text</li>
+	<li>text</li>
+<ol>

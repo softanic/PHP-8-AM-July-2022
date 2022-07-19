@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<title>form</title>
+	</head>
+	<body>
+		<form action="save.php" method="get">
+			<label>First Name:</label><br>
+			<input type="text" name="first_name" required autofocus 
+			placeholder="enter first name here" value="abcd" maxlength=5><br>
+			<label>Last Name:</label><br>
+			<input type="text" name="last_name"><br>
+			<label>Password:</label><br>
+			<input type="password" name="password"><br>
+			<label>Mobile:</label><br>
+			<input type="number" min=5 max=10 name="mobile_no"><br>
+			<label>email:</label><br>
+			<input type="email" name="mobile_no"><br>
+			<br>
+			
+			<label>color:</label><br>
+			<input type="color" name="mobile_no"><br>
+			<br>
+			
+			<label>url:</label><br>
+			<input type="url" name="mobile_no"><br>
+			<br>
+			
+			<label>date:</label><br>
+			<input type="date" name="mobile_no"><br>
+			<br>
+			<label>time:</label><br>
+			<input type="time" name="mobile_no"><br>
+			<br>
+			
+			<label>week:</label><br>
+			<input type="week" name="mobile_no"><br>
+			<br>
+			
+			<label>month:</label><br>
+			<input type="month" name="mobile_no"><br>
+			<br>
+			<label>Gender:</label><br>
+			<input type="radio" name="gender"  value="m">Male
+			<input type="radio" name="gender" checked value="f">FeMale
+			
+			<br>
+			<label>lang known:</label><br>
+			<input type="checkbox" name="marathi"  value="marathi">Marathi
+			<input type="checkbox" name="hindi"  value="hindi">Hindi
+			<input type="checkbox" name="english" checked value="english">English
+			
+			<br>
+			<label>city</label>
+			<select name="city" multiple>
+				<option value="425001">Jalgaon</option>
+				<option value="425002">bhusawal</option>
+				<option value="425003">pune</option>
+				<option value="425004">nashik</option>
+				<option value="425005" selected>mumbai</option>
+			</select>
+			<br>
+			<label>Address</label>
+			<textarea name="addr" rows=5 cols=35 >jalgaon</textarea>
+			
+			<br>
+			<label>Photo</label>
+			<input type="file" name="photo" accept="image/*">
+			<br>
+			
+			<input type="submit" value="save">
+			<input type="reset">
+			<input type="button" value="simple button">
+			
+			<button type="submit">Save</button>
+		</form>
+		
+		<table  border=1>
+	<tr>
+		<th>
+			<label>First Name</label>
+		</th>
+		<td>
+			<input type="text">
+		</td>
+			
+	</tr>
+</table>
+	</body>
+</html>
