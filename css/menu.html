@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<style>
+			#navbar{
+				background-color: steelblue;
+				padding:5px;
+			}
+			#navbar > li{
+				display:inline;
+				list-style-type:none;
+				background-color:darkblue;
+				padding:2px 5px;
+				margin:-2px;
+			}
+			#navbar a{
+				text-decoration:none;
+				color:white;
+			}
+			#navbar ~ h1{
+				color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="navbar">
+			<li><a href="#">demo</a></li>
+			<li><a href="#">demo</a></li>
+			<li><a href="#">demo</a></li>
+			<li><a href="#">demo</a></li>
+		</ul>
+		<h1>1 sibling after ul</h1>
+		<h1>2 sibling after ul</h1>
+		<h1>3 sibling after ul</h1>
+		<ul>
+			<li><a href="#">demo</a></li>
+			<li><a href="#">demo</a></li>
+			<li><a href="#">demo</a></li>
+			<li><a href="#">demo</a></li>
+		</ul>
+		<h1>1 sibling after ul</h1>
+		<h1>2 sibling after ul</h1>
+		<h1>3 sibling after ul</h1>
+	</body>
+</html>

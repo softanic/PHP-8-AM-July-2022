@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<style>
+			h1 >span{
+				color:red;
+				background-color: yellow;
+				padding:5px;
+				font-size:15px;
+				border:2px solid red;
+				display:none;
+				position:absolute;
+				left:50;
+				top:10;
+			}
+			h1:hover > span{
+				display:inline;
+			}
+			h1:last-child{
+				color:green;
+			}
+			h1:nth-child(even){
+				color:orange;
+			}
+			h1:not(.spl){
+			
+			}
+			h1::before {
+				content:"-softanic";
+			}
+		</style>
+	</head>
+	<body>
+		<h1>1 sibling after ul <span>helping text 1</span></h1>
+		<h1>2 sibling after ul <span>helping text 1</span></h1>
+		<h1>2 sibling after ul <span>helping text 1</span></h1>
+		<h1>2 sibling after ul <span>helping text 1</span></h1>
+		<h1>2 sibling after ul <span>helping text 1</span></h1>
+		<h1>3 sibling after ul <span>helping text 1</span></h1>
+	</body>
+</html>
