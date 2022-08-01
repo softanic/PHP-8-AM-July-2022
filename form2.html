@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<style>
+			label{
+				color:gray;
+				font-family:sans-serif;
+			}
+			label>span{
+				color:Red;
+			}
+		</style>
+	</head>
+	<body>
+		<marquee direction="right" scrollamount=20 onmouseover='this.stop()' onmouseout='this.start()'>welcome</marquee>
+		<span>welcome</span>
+		<form action='save.php' method="get">
+			<label>First name <span>*</span></label><br>
+			<input type="text" name='fname' value='abc' autofocus>
+			<br>
+			
+			<label>Last name <span>*</span></label><br>
+			<input type="number" name='pass' required min=10 max=15>
+			<input type="color">
+			<br>
+			
+			<label>gender</label>
+			<input type="checkbox" name="gender" value='male' checked>Male
+			<input type="checkbox"  name="gender" value='female'>Female
+			<br>
+			
+			<select name="student" multiple>
+				<option value='10'>Khushi</option>
+				<option value='11'>Aniket</option>
+				<option value='12' selected>Kushal</option>
+			</select>	
+			<br>
+			<textarea rows=10 cols=50 placeholder='address'>xyz</textarea>
+			<br>
+			<input type="submit" value="Save">
+			<input type="reset">
+			<input type="button" value='click here'>
+			<ol>
+				<li>demo</li>
+				<li>demo</li>
+				<li>demo</li><li>demo</li>
+			</ol>
+			
+			<iframe src='http://softanic.in' height=500 width=800></iframe>
+		</form>
+	</body>
+</html>
