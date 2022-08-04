@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<script>
+			function demo()
+			{
+				//document.write('<h1>Thank you</h1>');
+				//document.getElementById('output').innerHTML='Thank You'
+				//let data=document.getElementById('output').innerHTML;
+				//alert(data);
+				let name=document.getElementById('name').value;
+				document.getElementById('welcome').innerHTML='welcome '+name;
+			}
+		</script>
+	</head>
+	<body>
+		<input type='text' id='name' onkeyup='demo()' placeholder='enter name' >
+		<input type="button" onclick='demo()' value='click here'>
+		<h1 onclick='demo()' id='welcome'>welcome</h1>
+		<p id='output'>softanic</p>
+	</body>
+</html>

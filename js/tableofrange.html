@@ -1,0 +1,47 @@
+<html>
+	<body>
+		<style>
+			tr:first-child{
+				//color:red;
+			}
+		</style>
+		<script>
+		
+		
+			function table(fno,sno)
+			{
+				//var fno=15;
+				//var sno=20;
+				document.write('<table border=1>');
+				for(i=1;i<=10;i++)
+				{
+					if(i==1)
+					{
+						document.write('<tr style="color:blue;">');
+					}else{
+						document.write('<tr>');
+					}
+					
+					for(j=fno;j<=sno;j++)
+					{
+						document.write('<td>'+ i*j +'</td>');
+					}
+					document.write('</tr>');
+				}
+				document.write("</table>");
+				
+				
+			}
+			
+			function demo()
+			{
+				let fn=document.getElementById('fno').value;
+				let sn=document.getElementById('sno').value;
+				table(fn,sn);
+			}
+		</script>
+		<input type="number" id='fno'>
+		<input type="number" id='sno'>
+		<input type="button" value='click' onclick='demo()'>
+	</body>
+</html>
