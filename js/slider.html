@@ -1,0 +1,17 @@
+<html>
+
+	<body>
+		<script>
+			function slider(path)
+			{
+				document.getElementById('image').src=path;
+			}
+		</script>
+		<img src='1.jpg' id='image' height=500 width=1000>
+		<center>
+		<input type='radio' name='a' value="1.jpg" checked onclick='slider(this.value)'> 
+		<input type='radio' name='a' value="2.jpg" onclick='slider(this.value)'>
+		<input type='radio' name='a' value="3.jpg" onclick='slider(this.value)'>
+		</center>
+	</body>
+</html>

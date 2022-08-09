@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<script>
+			function calc(opr)
+			{
+				//alert(opr)
+				let fno=parseInt(document.getElementById('fno').value);
+				let sno=parseInt(document.getElementById('sno').value);
+				if(opr=="+")
+				{
+					ans=fno+sno;
+				}
+				document.getElementById('output').innerHTML=ans;
+			}
+		</script>
+	</head>
+	<body>
+		<input type='number' id='fno'>
+		<input type='number' id='sno'>
+		<input type='button' id='plus_btn' value='+' onclick='calc("+")'>
+		<input type='button' id='min_btn' value='-'  onclick='calc("-")'>
+		<input type='button' id='multi_btn' value='*' onclick='calc("*")'>
+		<input type='button' id='div_btn' value='/' onclick='calc("/")'>
+		<div id='output'></div>
+		
+	</body>
+</html>

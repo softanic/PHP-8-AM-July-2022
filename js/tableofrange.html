@@ -12,23 +12,27 @@
 			{
 				//var fno=15;
 				//var sno=20;
-				document.write('<table border=1>');
+				let str ='<table border=1>';
+				//alert(str);
 				for(i=1;i<=10;i++)
 				{
 					if(i==1)
 					{
-						document.write('<tr style="color:blue;">');
+						str +='<tr style="color:blue;">';
 					}else{
-						document.write('<tr>');
+						str +='<tr>';
 					}
 					
 					for(j=fno;j<=sno;j++)
-					{
-						document.write('<td>'+ i*j +'</td>');
+					{ 
+						str +='<td>'+ i*j +'</td>';
 					}
-					document.write('</tr>');
+					str +='</tr>';
+					//alert(str);
 				}
-				document.write("</table>");
+				str+="</table>";
+				alert(str)
+				document.getElementById('output').innerHTML=str;
 				
 				
 			}
@@ -43,5 +47,6 @@
 		<input type="number" id='fno'>
 		<input type="number" id='sno'>
 		<input type="button" value='click' onclick='demo()'>
+		<div id='output'></div>
 	</body>
 </html>
