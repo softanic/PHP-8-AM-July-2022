@@ -1,0 +1,23 @@
+<html>
+	<script>
+		function demoFun()
+		{
+			//let data=document.getElementsByClassName('demo');
+			let data=document.getElementsByTagName('h1');
+			for(i=0;i<data.length;i++)
+			{
+					data[i].style.color=data[i].innerHTML;
+			}
+		}
+		
+	</script>
+	<body>
+		<h1 class='demo' onclick='demoFun()'>red</h1>
+		<h1 class='demo'>blue</h1>
+		<h1 class='demo'>green</h1>
+		<h1 class='demo'>yellow</h1>
+		<h1>orange</h1>
+		<h1>cyan</h1>
+		<h1>purple</h1>
+	</body>
+</html>

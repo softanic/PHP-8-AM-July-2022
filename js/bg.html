@@ -1,0 +1,17 @@
+<html>
+	<script>
+		function changeColor(c)
+		{
+			c=document.getElementById('clr').value;
+			document.getElementById('data').style.color=c;
+		}
+	</script>
+	<body id=''>
+		<h1 id='data' >Welcome</h1>
+		<h1 id='data' >Welcome</h1>
+		<input type='color' id='clr'>
+		<input type="button" value='red' onclick='changeColor(this.value)'>
+		<input type="button" value='blue' onclick='changeColor(this.value)'>
+		<input type="button" value='green' onclick='changeColor(this.value)'>
+	</body>
+</html>
