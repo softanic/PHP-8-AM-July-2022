@@ -1,0 +1,38 @@
+<html>
+	<script>
+		let str='   softanic   ';
+		let mono='8275331362';
+		//alert(str.substr(-1))
+		//str.replace("o","a");
+		//alert(str.toUpperCase());
+		//alert(str.toLowerCase());
+		//alert(str.concat('welcome '));
+		
+		//alert(str.trim());
+		let new_mono=mono.slice(-9);
+		
+		alert(new_mono.padStart(10,'X'));
+		alert(new_mono.padEnd(10,'X'));
+		
+		
+		
+		//alert(str.length);
+		/*function demo()
+		{
+			let n=document.getElementById('name').value;
+			//document.getElementById('name').style="background:red";
+			if(n.length < 8)
+			{
+				//alert('yes');
+				document.getElementById('name').style.border="1px solid red";
+				
+			}else{
+				alert('no');
+				document.getElementById('name').style.border="1px solid green";
+			}
+			//document.getElementById('nameLength').innerHTML=n.length;
+		}*/
+	</script>
+	<input type="text" id='name' onkeyup='demo()'>
+	<span id='nameLength'>0</span>
+</html>

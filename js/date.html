@@ -1,0 +1,18 @@
+<html>
+<h1 id='output'></h1>
+	<script>
+	function date()
+	{
+		let d=new Date();
+		let m=['j','F','M','A','MAY','JUNE','JULY','AUG','SEP'];
+		//document.write(m[d.getMonth()]);
+		let min=d.getMinutes()
+		document.getElementById('output').innerHTML=d.getHours() +":"+min+":"+d.getSeconds();
+		
+		
+		setTimeout("date()",1000);
+	}
+	date();
+	</script>
+	
+</html>
