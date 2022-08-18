@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<script>
+		function validate()
+		{
+			let name=document.getElementById('name');
+			if(name.value=="")
+			{
+				name.style.border="2px solid red";
+				document.getElementById('nameErr').innerHTML='Please enter name';
+				return false;
+			}else if(name.value.length <2){
+				name.style.border="2px solid red";
+				document.getElementById('nameErr').innerHTML='Please enter name properly';
+				return false;
+			}
+		}
+		</script>
+	</head>
+	<body>
+		<form action='save.php' method='get'>
+			<label>Name</lable>
+			<input type='text' id='name'><span id='nameErr'></span> <br>
+			<input type="submit" onclick='return validate()'>
+		</form>
+	</body>
+</html>

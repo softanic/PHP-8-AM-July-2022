@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<script>
+			let x=3.14151417;
+			//document.write(Math.floor(3.14));
+			//document.write(x.toFixed(5));
+			//document.write(Math.abs(-3.14));
+			document.write(Math.min(3,2,5,8,99,44,66,22,1.1,2.0));
+			document.write(Math.ceil( Math.random()*10000 ));
+			
+			function demo()
+			{
+				let name=prompt('Enter your name');
+				alert(name);
+			}
+				
+			
+		</script>
+	</head>
+	<input type='button' value='Print' onclick='demo()'>
+	<input type='button' value='Refresh' onclick='window.location.reload();'>
+	<input type='button' value='Refresh' onclick='window.location.href="http://google.com";'>
+	<input type='button' value='back' onclick='window.history.forward();'>
+	<input type='button' value='Refresh' onclick='alert("welcome");'>
+	<a onclick='return confirm("are u sure?")' href="http://google.com">Delete</a>
+	
+	
+</html>
