@@ -2,7 +2,7 @@
 $x=12;
 $y="11";
 
-/*
+
 
 if($x==$y xor $x >=10)
 {
@@ -10,7 +10,7 @@ if($x==$y xor $x >=10)
 }else{
 	echo "no";
 }
-*/
+
 
 $name="Softanic ";
 $lastname='solutions';
