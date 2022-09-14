@@ -21,7 +21,7 @@
 	{
 		//echo "record inserted <br>";
 		//echo 'record inserted at id : '. mysqli_insert_id($conn);
-		echo "<script>alert('Record Inserted successfully');window.location='insert-form.php';</script>";
+		echo "<script>alert('Record Inserted successfully');window.location='select.php';</script>";
 		
 	}else{
 		echo 'Fail to insert, Please try again';
