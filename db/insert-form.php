@@ -1,6 +1,6 @@
 <html>
 	<body>
-		<form action='insert.php' method='get'>
+		<form action='insert.php' method='post' enctype="multipart/form-data"> 
 			<table border=0>
 				<tr>
 					<th>Name</th>
@@ -32,6 +32,10 @@
 					<th>password</th>
 					<td><input type='text' name='password'></td>
 					
+				</tr>
+				<tr>
+					<th>Photo</th>
+					<td><input type="file" name="photo"></td>
 				</tr>
 				<tr>
 					<th></th>
