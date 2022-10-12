@@ -19,6 +19,24 @@ include 'header.php';
             $q2 = "select * from msgs where (from_id=$user_id and to_id=$id) or (from_id=$id and to_id=$user_id)";
             $chat_res = mysqli_query($conn, $q2);
             ?>
+			<script>
+				function loadMsgs()
+				{
+					//alert();
+					var xhttp = new XMLHttpRequest();
+				  xhttp.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200) {
+					 document.getElementById("chat").innerHTML = this.responseText;
+					 //alert(this.responseText);
+					 setTimeout('loadMsgs()',1000);
+					}
+				  };
+				  xhttp.open("GET", "load_msgs.php?id=<?php echo $id; ?>", true);
+				  xhttp.send();
+				}
+				
+            </script>
+                    
             <!-- Area Chart -->
             <div class="col-xl-8 col-lg-7">
                 <div class="card shadow mb-4">
@@ -43,26 +61,13 @@ include 'header.php';
                     </div>
                     <!-- Card Body -->
                     <div class="card-body overflow-y" id="chat" style="height: 300px;">
-                        <?php
-                        /*                while ($chat = mysqli_fetch_array($chat_res)) {
-                          if ($chat['from_id'] == $user_id) {
-                          echo "<div class='text-right text-danger'>" . $chat['msg'] . "</div>";
-                          } else {
-
-                          echo "<div class=' text-success'>" . $chat['msg'] . "</div>";
-                          }
-                          }
-                         * 
-                         */
-                        ?>
+                        
 
                     </div>
-                    <script>
-                        var source = new EventSource("msg-data.php?id=<?php echo $to_data['user_id']; ?>");
-                        source.onmessage = function (event) {
-                            document.getElementById("chat").innerHTML = event.data + "<br>";
-                        };
-                    </script>
+					<script>
+						loadMsgs();
+						
+					</script>
                     <div class="card-footer">
                         <form class="" action="msg-save.php" method="post">
                             <div class="input-group">
